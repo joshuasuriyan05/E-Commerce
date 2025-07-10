@@ -54,7 +54,7 @@ const AdminAddProduct = () => {
     data.append("image", imageFile); // 'image' must match multer field name
 
     try {
-      const res = await axios.post("http://localhost:5000/api/products", data, {
+      const res = await axios.post("https://e-commerce-1-h1h0.onrender.com/api/products", data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

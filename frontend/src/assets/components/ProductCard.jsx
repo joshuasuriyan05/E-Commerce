@@ -22,7 +22,7 @@ const ProductCard = ({ product }) => {
     if (!inCart) addToCart(product);
   };
 
-  const localBackendUrl = `http://localhost:5000/api/payment`;
+  const localBackendUrl = `https://e-commerce-1-h1h0.onrender.com/api/payment`;
 
   const handleBuyNow = async () => {
     if (product.price > 500000) {
@@ -77,7 +77,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden p-2 hover:shadow-xl transition-shadow relative ml-2">
-      <img src={`http://localhost:5000/uploads/${product.image}`} alt={product.name} className="w-full h-48 object-contain rounded"/>
+      <img src={`https://e-commerce-1-h1h0.onrender.com/uploads/${product.image}`} alt={product.name} className="w-full h-48 object-contain rounded"/>
       <div className="mt-4">
         <h3 className="text-lg font-semibold capitalize">{product.name}</h3>
         <p className="text-gray-600">₹{product.price}</p>

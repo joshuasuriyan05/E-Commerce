@@ -20,7 +20,7 @@ const Cart = () => {
           {cartItems.map((item) => (
             <div key={item._id} className="flex items-center justify-between bg-white p-4 rounded shadow">
               <div className="flex items-center gap-4">
-                <img src={`http://localhost:5000/uploads/${item.image}`} alt={item.name} className="w-20 h-20 object-contain rounded border"/>
+                <img src={`https://e-commerce-1-h1h0.onrender.com/uploads/${item.image}`} alt={item.name} className="w-20 h-20 object-contain rounded border"/>
                 <div>
                   <h3 className="text-lg font-semibold">{item.name}</h3>
                   <p className="text-gray-600">₹{item.price}</p>
